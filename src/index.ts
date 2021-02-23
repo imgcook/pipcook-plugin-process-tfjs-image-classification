@@ -1,6 +1,6 @@
 import { DataProcessType, Metadata, ArgsType, ImageSample, Sample } from '@pipcook/pipcook-core';
 import * as fs from 'fs-extra';
-import * as tf from '@tensorflow/tfjs-node-gpu';
+import * as tf from '@tensorflow/tfjs-node';
 
 /**
  * this is the data process plugin to process pasvoc format data. It supports resize the image and normalize the image
