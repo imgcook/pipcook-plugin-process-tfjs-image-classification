@@ -30,7 +30,7 @@ const sampleProcessor: Script.SampleProcessor<DataCookImage, tf.Tensor3D> = asyn
   const { normalize = false } = options;
   if (normalize) return {
     data: context.dataCook.Image.normalize(resized.toTensor()),
-    label
+    label,
   }
   return {
     data: resized.toTensor(),
